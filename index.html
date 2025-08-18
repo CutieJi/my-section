@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>RogueVandals</title>
+    <link rel="icon" type="image/x-icon" href="rvlogob.ico" />
+    <link href="input.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="particles.js"></script>
+    <script type="module" src="particlesjs-config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Micro+5&family=Pixelify+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/354d48ccb6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-black" style="font-family: IBM plex mono">
+    <audio id="bg-music" autoplay loop hidden>
+      <source src="rvmusic.mp3" type="audio/mpeg" />
+    </audio>
+    <script>
+  window.addEventListener('DOMContentLoaded', function () {
+    const audio = document.getElementById('bg-music');
+    audio.play().catch(() => {
+      const startAudio = () => {
+        audio.play();
+        document.removeEventListener('click', startAudio);
+        
+      };
+      document.addEventListener('click', startAudio);
+      
+    });
+  });
+    </script>
+    <div id="particles-js" class="-z-0"></div>
+    <header
+      class="text-white bg-none body-font top-0 left-0 right-0 fixed bg-black bg-opacity-20 backdrop-blur-md z-40 border-b-[0.5px] hidden md:block"
+    >
+      <div
+        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+      >
+        <img class="w-10" src="rvlogow.png" alt="Logo" /><a
+          href="#home"
+          class="flex title-font font-medium items-center mb-4 md:mb-0"
+          ><p class="ml-3 text-xl text-green-200">RogueVandals</p></a
+        >
+        <nav
+          class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center font-semibold glow"
+        >
+          <a
+            href="#events"
+            class="mr-5 hover:text-green-400 hover:text-[17px] hover:duration-200 transition-all"
+            >Events</a
+          ><a
+            href="#glitch"
+            class="mr-5 hover:text-green-400 hover:duration-200 hover:text-[17px] transition-all;"
+            >Clan Goal</a
+          >
+          <a
+            href="#crule"
+            class="mr-5 hover:text-green-400 hover:duration-200 hover:text-[17px] transition-all;"
+            >Clan Rules</a
+          >
+          <a
+            href="#contact"
+            class="mr-5 hover:text-green-400 hover:duration-200 hover:text-[17px] transition-all"
+            >Contact</a
+          >
+          
+        </nav>
+        <button
+          class="inline-flex items-center font-semibold bg-green-500 text-white border-0 py-1 px-3 focus:outline-none hover:bg-[wheat] glow rounded text-base mt-4 md:mt-0 transition-colors duration-500 -z-1"
+        >
+          <a href="https://forms.gle/PNjHk6TknFWWY8gP6" target="_blank"
+            >Apply Now!</a
+          >
+        </button>
+      </div>
+    </header>
+    <div
+      class="fixed bottom-0 z-20 w-full flex items-center justify-center pb-4 md:hidden"
+    >
+      <a href="https://forms.gle/PNjHk6TknFWWY8gP6" target="_blank"
+        ><button
+          class="inline-flex items-center bg-green-500 text-white py-1 px-5 rounded-2xl bg-opacity-40 backdrop-blur-md"
+        >
+          Apply Now! 
+        </button></a
+      >
+    </div>
+    <section class="text-gray-300 body-font" id="home">
+      <div
+        class="container mx-auto flex px-5 py-10 items-center justify-center flex-col lg:mt-10"
+      >
+        <img
+          class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded -z-10"
+          id="float"
+          alt="hero"
+          src="rvlogo.png"
+        />
+        <div class="text-center lg:w-2/3 w-full">
+          <br />
+          <h1
+            class="glow title-font sm:text-4xl text-3xl mb-4 font-bold text-green-400"
+          >
+            THE<br />ESPORTS CLUB OF<br />ROGUE VANDALS
+          </h1>
+          <br />
+          <p class="leading-relaxed mb-8 sm:text-xl text-sm white-glow">
+            Welcome to Rogue Vandals, a premier Call of Duty: Mobile esports team
+            dedicated to excellence and competitive greatness. With a strong foundation
+            built on teamwork, strategy, and skill, our clan is committed to dominating
+            the CODM scene. Our experienced players and staff work tirelessly to perfect
+            their craft, fostering a culture of innovation, discipline, and sportsmanship.
+            Join us as we take on the best of the best, pushing the limits of what's
+            possible in the world of CODM.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="text-gray-300 body-font" id="events">
+      <div
+        class="container mx-auto flex px-5 py-24 items-center justify-center flex-col"
+      >
+        <div class="text-center lg:w-2/3 w-full">
+          <br />
+          <h1
+            class="glow title-font sm:text-4xl text-3xl font-bold text-green-400"
+          >
+            EVENTS AND TOURNAMENTS
+          </h1>
+          <br />
+          <p class="leading-relaxed mb-8 sm:text-xl text-sm white-glow">
+            Throughout the year, RV eSports hosts a variety of engaging
+            events aimed at both beginners and seasoned gamers alike,
+            where participant delve into the latest advancements in gaming technology,
+            to our Orientation Program,
+            designed to welcome newcomers and integrate them into our vibrant
+            community, we strive to offer something for everyone.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="text-gray-300 body-font white-glow" id="apply">
+      <center>
+      <h1
+            class="glow title-font sm:text-4xl text-3xl font-bold text-green-400"
+          >
+            Do you want to be part of our clan?
+            Apply now! (click below which way you want to apply)
+          </h1>
+        </center>
+      <div class="container px-5 py-24 mx-auto flex flex-wrap">
+        <div class="lg:w-2/3 mx-auto">
+          <div class="px-2">
+            <div
+              class="flex flex-wrap w-full bg-gray-800 py-24 px-10 relative mb-4 rounded-xl hover:scale-95 transition-all duration-300"
+            >
+              <img
+                alt="gallery"
+                class="w-full rounded-xl object-cover h-full object-center block opacity-50 absolute inset-0 brightness-50"
+                src="rv.png"
+              />
+              <div class="text-center relative z-10 w-full">
+                <h2 class="text-2xl text-white font-medium title-font mb-2">
+                  Facebook Page
+                </h2>
+                <p class="leading-relaxed">
+                  Apply through facebook page by messaging our admins in there.
+                  A responsible admin will interact with you and just follow steps.
+                  It may took a minute.
+                </p>
+                <a href='https://www.facebook.com/share/1EQhMPKY2k/' class="mt-3 text-green-400 inline-flex items-center glow Register"
+                  >Apply<svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path></svg
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-4 lg:gap-0">
+            <div class="px-2 lg:max-w-[50%]">
+              <div
+                class="flex flex-wrap w-full bg-gray-800 sm:py-24 py-16 sm:px-10 px-6 relative rounded-xl hover:scale-95 transition-all duration-300"
+              >
+                <img
+                  alt="gallery"
+                  class="w-full object-cover h-full object-center block opacity-25 absolute inset-0"
+                  src="dc.png"
+                />
+                <div class="text-center relative z-10 w-full">
+                  <h2 class="text-xl text-white font-medium title-font mb-2">
+                    Discord Server
+                  </h2>
+                  <p class="leading-relaxed">
+                    Apply through Discord by taking a ticket report.
+                    A responsible admin will interact with you and just follow steps.
+                    It may took a minute.
+                  </p>
+                  <a class="mt-3 text-green-400 inline-flex items-center glow Register"
+                    >Apply<svg
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-4 h-4 ml-2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7"></path></svg
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-4 lg:gap-0">
+            <div class="px-2 lg:max-w-[50%]">
+              <div
+                class="flex flex-wrap w-full bg-gray-800 sm:py-24 py-16 sm:px-10 px-6 relative rounded-xl hover:scale-95 transition-all duration-300"
+              >
+                <img
+                  alt="gallery"
+                  class="w-full object-cover h-full object-center block opacity-25 absolute inset-0"
+                  src="gform.png"
+                />
+                <div class="text-center relative z-10 w-full">
+                  <h2 class="text-xl text-white font-medium title-font mb-2">
+                    Google Form
+                  </h2>
+                  <p class="leading-relaxed">
+                    Apply through Google Form by filling out the questions.
+                    A responsible admin will interact with you and just follow steps.
+                    It may took a minute.
+                  </p>
+                  <a href="https://forms.gle/PNjHk6TknFWWY8gP6" class="mt-3 text-green-400 inline-flex items-center glow Register"
+                    >Apply<svg
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-4 h-4 ml-2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7"></path></svg
+                  ></a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="text-gray-300 body-font" id="glitch">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+          <br />
+          <h1
+            class="title-font sm:text-4xl text-3xl mb-4 font-medium text-green-400"
+            style="font-family: Pixelify Sans"
+          >
+            Rogue Vandals' Goals
+          </h1>
+          <br /><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="inline-block w-8 h-8 text-white-400 mb-8"
+            viewBox="0 0 975.036 975.036"
+          >
+            <path
+              d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+            ></path>
+          </svg>
+          <p class="leading-relaxed mb-8 sm:text-xl text-sm white-glow">
+            At the heart of our club's mission is our main focused event,
+            Techfest (RV:G 2025). This annual extravaganza serves as a
+            culmination of our efforts, bringing together gaming enthusiasts,
+            industry professionals, and innovators for a celebration of all
+            things eSports. RV:G 2025 promises to be our most exhilarating
+            event yet, featuring thrilling competitions, insightful panels, and
+            opportunities for networking and collaboration. Join us at Arcadia
+            eSports as we continue to push the boundaries of gaming and
+            technology, fostering a community where passion meets innovation.
+            Whether you're a casual gamer, aspiring developer, or seasoned
+            eSports competitor, there's a place for you in our ever-expanding
+            universe.
+          </p>
+        
+          <span
+            class="inline-block h-1 w-10 rounded bg-green-500 mt-8 mb-6"
+          ></span>
+          <h2 
+            class="text-gray-500 font-medium title-font tracking-wider text-sm"
+          >
+          
+            RV:G • @RV
+          </h2>
+        </div>
+      </div>
+    </section>
+    <section class="text-gray-300 body-font" id="crule">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+          <br />
+          <h1
+            class="title-font sm:text-4xl text-3xl mb-4 font-medium text-green-400"
+            style="font-family: Pixelify Sans"
+          >
+            Rogue Vandals' Clan Rules
+          </h1>
+         
+          <br /><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="inline-block w-8 h-8 text-white-400 mb-8"
+            viewBox="0 0 975.036 975.036"
+          >
+            <path
+              d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+            ></path>
+          </svg>
+          
+          <p class="leading-relaxed mb-8 sm:text-xl text-sm white-glow">
+            At RV:CL 2025, we believe that a set of guiding principles is essential to fostering a positive, productive, and fun environment for all members. Our clan rules are designed to promote:
+            <br>
+            <br>
+            - Teamwork & Collaboration: By working together, we can achieve greatness and overcome even the toughest challenges.
+            <br>
+            - Respect & Sportsmanship: We treat each other with respect, kindness, and empathy, both in victory and defeat.
+            <br>
+            - Growth & Improvement: We continuously learn, adapt, and improve our skills, strategies, and gameplay.
+            <br>
+            - Fun & Camaraderie: Most importantly, we have fun and enjoy each other's company, making gaming a positive and rewarding experience
+            <br>
+            <br>
+            <br>
+            By following our rules, you'll enjoy benefits like:
+            <br>
+            <br>
+            - Active Community: Engage with fellow members, participate in events, and stay updated on clan activities.
+            <br>
+            - Supportive Environment: Get tips, advice, and constructive feedback to help you improve your gameplay.
+            <br>
+            - Exciting Events: Participate in tournaments, challenges, and other activities that'll test your skills and reward your dedication.
+            <br>
+            - Lasting Friendships: Forge strong bonds with like-minded gamers who share your passion and enthusiasm.
+          </p>
+          <div class="rulebookbtn">
+            <a href="/rvcr.pdf" download
+        ><button
+          class="inline-flex items-center bg-green-500 font-semibold text-white py-1 px-5 rounded-2xl bg-opacity-100 backdrop-blur-md glow"
+        >
+          Rulebook
+        </button></a
+      >
+          </div>
+         
+         <br>
+          <span
+            class="inline-block h-1 w-10 rounded bg-green-500 mt-8 mb-6"
+          ></span>
+          <br>
+          
+          <h2
+            class="text-gray-500 font-medium title-font tracking-wider text-sm"
+          >
+
+            RV:CR 2025 • @RV
+          </h2>
+          
+        </div>
+      </div>
+     
+          
+    </section>
+    
+    <footer class="container px-5 py-24 mx-auto" id="contact">
+      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+            <a class="flex items-center flex-wrap gap-2"
+              ><img src="rvlogo.png" class="h-8 me-3" alt="" /><span
+                class="self-center text-xs font-semibold whitespace-nowrap text-white lg:text-2xl"
+                >Rogue Vandals</span
+              ></a
+            >
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div class="z-10">
+              <h2 class="mb-6 text-sm font-semibold text-green-400 uppercase">
+                Contact
+              </h2>
+              <ul class="text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a
+                    href="#"
+                    class="hover:text-green-200 hover:text-[16.35px] transition-all duration-200 glow"
+                    >RV Keyaa</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-green-200 hover:text-[16.35px] transition-all duration-200 glow"
+                    >RV Mitzuri</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="z-10">
+              <h2 class="mb-6 text-sm font-semibold uppercase text-green-400">
+                Follow us
+              </h2>
+              <ul class="text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a
+                    href="https://www.facebook.com/share/1EQhMPKY2k/"
+                    target="_blank"
+                    class="hover:underline"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="1232989763326185545"
+                    target="_blank"
+                    class="hover:underline"
+                    >Discord</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="mailto:1roguevandals0@gmail.com"
+                    target="_blank"
+                    class="hover:underline"
+                    >Email</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="z-10">
+              <h2 class="mb-6 text-sm font-semibold text-green-400 uppercase">
+                Legal
+              </h2>
+              <ul class="text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline" target="_blank"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:underline" target="_blank"
+                    >Terms &amp; Conditions</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <span
+          class="inline-block h-[1px] w-10 rounded bg-green-500 mt-8 mb-6"
+        ></span>
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm sm:text-center text-gray-400"
+            >© 2025 <a href="" class="hover:underline">Rogue Vandals</a>. All
+            Rights Reserved.</span
+          >
+        </div>
+        <hr class="my-6 sm:mx-auto border-gray-700 lg:my-8" />
+        <div class="flex justify-between">
+          <h2
+            class="text-xs text-gray-400 hover:text-green-300 hover:scale-105 transition-all duration-150 z-10 glow"
+          >
+            Maintained By
+          </h2>
+          <div class="flex gap-3 z-10">
+            <a
+              href="https://github.com/CutieJi/"
+              target="_blank"
+              class="text-xs text-gray-400 hover:text-yellow-200 hover:scale-105 text-glow transition-all duration-300"
+              ><i class="fa-brands fa-github"></i> @RoshIngel</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
