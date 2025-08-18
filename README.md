@@ -1,4 +1,4 @@
-# Rogue Vandals
+# BSCS-1A
 
 Welcome to **BSCS1A WebHub**, a platform dedicated to creating a sportsmanship for gaming enthusiasts. This project focuses on building a friendship, minimalistic website for an esports community.
 
