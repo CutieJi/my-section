@@ -27,5 +27,5 @@ Check out the live version here: [Rogue Vandals](https://bscs1a.netlify.app).
 
 ## License
 
-All rights are reserved under [RV eSports](https://github.com/CutieJi/esports/blob/main/LICENSE)
+All rights are reserved under [RV eSports](https://github.com/CutieJi/my-section/blob/main/LICENSE)
 
