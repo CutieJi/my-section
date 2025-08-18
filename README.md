@@ -1,6 +1,6 @@
 # Rogue Vandals
 
-Welcome to **RogueVandals WebHub**, a platform dedicated to creating a sportsmanship for gaming enthusiasts. This project focuses on building a friendship, minimalistic website for an esports community.
+Welcome to **BSCS1A WebHub**, a platform dedicated to creating a sportsmanship for gaming enthusiasts. This project focuses on building a friendship, minimalistic website for an esports community.
 
 ## Features
 - **Landing Page**: Highlighting profile info and application recruitment.
@@ -17,13 +17,13 @@ Welcome to **RogueVandals WebHub**, a platform dedicated to creating a sportsman
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/CutieJi/esports.git
+    git clone https://github.com/CutieJi/my-section.git
     ```
 2. Open `index.html` in your browser to view the site.
 
 ## Preview
 
-Check out the live version here: [Rogue Vandals](https://roguevandals.netlify.app).
+Check out the live version here: [Rogue Vandals](https://bscs1a.netlify.app).
 
 ## License
 
