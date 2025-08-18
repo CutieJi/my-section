@@ -23,7 +23,7 @@ Welcome to **BSCS1A WebHub**, a platform dedicated to creating a sportsmanship f
 
 ## Preview
 
-Check out the live version here: [Rogue Vandals](https://bscs1a.netlify.app).
+Check out the live version here: [BSCS-1A](https://bscs1a.netlify.app).
 
 ## License
 
