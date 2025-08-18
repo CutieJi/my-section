@@ -27,5 +27,5 @@ Check out the live version here: [Rogue Vandals](https://bscs1a.netlify.app).
 
 ## License
 
-All rights are reserved under [BSCS1A Web](https://github.com/CutieJi/my-section/blob/main/LICENSE)
+All rights are reserved under [Rosh](https://github.com/CutieJi/my-section/blob/main/LICENSE)
 
